@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "invalid_examples_rejected": [
+    "duplicate",
+    "wrong_norm",
+    "unpaired_positive_conflict",
+    "conflict_with_negative_member_of_pair",
+    "negative_rational_denominator",
+    "rational_wrong_norm",
+    "rational_integer_conflict",
+    "rational_rational_conflict",
+    "equal_rationals_different_denominators"
+  ],
+  "positive_boundary_examples": 4
+}

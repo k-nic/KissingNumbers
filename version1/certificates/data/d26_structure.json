@@ -1,0 +1,50 @@
+{
+  "record": "d26",
+  "integer_layers": {
+    "0,0,128": 4,
+    "0,64,64": 128,
+    "0,96,32": 512,
+    "0,128,0": 4064,
+    "32,64,32": 8192,
+    "32,96,0": 122880,
+    "64,0,64": 64,
+    "64,64,0": 65024,
+    "96,0,32": 128,
+    "128,0,0": 144
+  },
+  "deletion_types": {
+    "0,128,0": 256,
+    "64,64,0": 4096,
+    "128,0,0": 96
+  },
+  "fibre_state_histogram": [
+    {
+      "deleted": 0,
+      "inserted": 0,
+      "fibres": 3296
+    },
+    {
+      "deleted": 4,
+      "inserted": 8,
+      "fibres": 1024
+    }
+  ],
+  "nonzero_tail_count": 9028,
+  "unique_integer_bodies": 4523,
+  "midpoint_count": 8832,
+  "unforced_deletion_indices": [],
+  "rational_conflicting_leech_count": 49,
+  "rational_support_coordinates": [
+    0,
+    2,
+    4,
+    5,
+    6,
+    10,
+    11,
+    23,
+    24,
+    25
+  ],
+  "rational_zero_tail_rows": []
+}

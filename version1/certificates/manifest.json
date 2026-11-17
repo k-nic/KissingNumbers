@@ -1,0 +1,221 @@
+{
+  "format": "kissing-d26-29-exact-v3",
+  "date": "2026-11-17",
+  "squared_norm": 128,
+  "inner_product_limit": 64,
+  "records": {
+    "d26": {
+      "dimension": 26,
+      "cardinality": 201192,
+      "integer_points": 201140,
+      "rational_points": 52,
+      "coordinates": "data/d26_coordinates.npz",
+      "certificate": "data/d26_certificate.npz",
+      "source_filename": "26/coordinates26_201192_exact.npz",
+      "source_sha256": "7d9707c126e286dcbcc317829ac3545671b146a2042474e1427fec1386b85586",
+      "source_coordinate_multiplier": 2,
+      "canonical_hashes": {
+        "integer_rows_sha256": "51f801a91a3482d5cca2dc1e952f7178c729ad4880e881c405b38671309edf88",
+        "rational_rows_sha256": "354732eb9d03908ce94469dadff3b81e8da253810f603f849ec2951f21e10bd7"
+      },
+      "integer_layer_counts": {
+        "0,0,128": 4,
+        "0,64,64": 128,
+        "0,96,32": 512,
+        "0,128,0": 4064,
+        "32,64,32": 8192,
+        "32,96,0": 122880,
+        "64,0,64": 64,
+        "64,64,0": 65024,
+        "96,0,32": 128,
+        "128,0,0": 144
+      },
+      "retained_leech_points": 192112,
+      "deleted_leech_points": 4448,
+      "added_integer_points": 9028,
+      "deletion_type_counts": {
+        "0,128,0": 256,
+        "64,64,0": 4096,
+        "128,0,0": 96
+      },
+      "all_compatible_leech_vectors_retained": true,
+      "unforced_deletion_count": 0,
+      "midpoint_points": 8832,
+      "midpoint_distinct_bodies": 4430
+    },
+    "d27": {
+      "dimension": 27,
+      "cardinality": 210108,
+      "integer_points": 210108,
+      "rational_points": 0,
+      "coordinates": "data/d27_coordinates.npz",
+      "certificate": "data/d27_certificate.npz",
+      "source_filename": "27/coordinates27_210108.npz",
+      "source_sha256": "bd47aa0870d85ce9061fb62497a01a7ad96c0ec8a0d8eb915662610bc0ced865",
+      "source_coordinate_multiplier": 1,
+      "canonical_hashes": {
+        "integer_rows_sha256": "ba50b047bd330934d1c5e2fa72a971c18700f9768a145213d98d59afa8e1adf6",
+        "rational_rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "integer_layer_counts": {
+        "0,0,128": 12,
+        "0,64,64": 192,
+        "0,96,32": 1024,
+        "0,128,0": 3808,
+        "32,64,32": 25088,
+        "32,96,0": 122880,
+        "64,0,64": 96,
+        "64,32,32": 128,
+        "64,64,0": 56512,
+        "96,0,32": 256,
+        "128,0,0": 112
+      },
+      "retained_leech_points": 183312,
+      "deleted_leech_points": 13248,
+      "added_integer_points": 26796,
+      "deletion_type_counts": {
+        "0,128,0": 512,
+        "64,64,0": 12608,
+        "128,0,0": 128
+      },
+      "all_compatible_leech_vectors_retained": true,
+      "unforced_deletion_count": 0,
+      "midpoint_points": 26496,
+      "midpoint_distinct_bodies": 13248
+    },
+    "d28": {
+      "dimension": 28,
+      "cardinality": 223496,
+      "integer_points": 223496,
+      "rational_points": 0,
+      "coordinates": "data/d28_coordinates.npz",
+      "certificate": "data/d28_certificate.npz",
+      "source_filename": "28/coordinates28_223496.npz",
+      "source_sha256": "5e8ba717ab57227928684622e01e6a1cfe41be96de6dbc01f2a90be52736a487",
+      "source_coordinate_multiplier": 1,
+      "canonical_hashes": {
+        "integer_rows_sha256": "6ec2dd2b766dbde1f17c3966c80745821884512fa1bc3338c5253f5bd48d3eb3",
+        "rational_rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "integer_layer_counts": {
+        "0,0,128": 24,
+        "0,64,64": 768,
+        "0,128,0": 4320,
+        "32,64,32": 50688,
+        "32,96,0": 122880,
+        "64,0,64": 384,
+        "64,32,32": 384,
+        "64,64,0": 43776,
+        "96,0,32": 64,
+        "128,0,0": 208
+      },
+      "retained_leech_points": 171184,
+      "deleted_leech_points": 25376,
+      "added_integer_points": 52312,
+      "deletion_type_counts": {
+        "64,64,0": 25344,
+        "128,0,0": 32
+      },
+      "all_compatible_leech_vectors_retained": true,
+      "unforced_deletion_count": 0,
+      "midpoint_points": 51136,
+      "midpoint_distinct_bodies": 25568
+    },
+    "d29": {
+      "dimension": 29,
+      "cardinality": 232153,
+      "integer_points": 232153,
+      "rational_points": 0,
+      "coordinates": "data/d29_coordinates.npz",
+      "certificate": "data/d29_certificate.npz",
+      "source_filename": "29/coordinates29_232153.npz",
+      "source_sha256": "6dbb5e8d1d3ae339dd4090c129e1d84ff0641433b50bd3d14b28e5ea8079bbe2",
+      "source_coordinate_multiplier": 1,
+      "canonical_hashes": {
+        "integer_rows_sha256": "e2108120a2c72a40406eef1bb11739ddf9b957a0449ca1433ed1afb97114a224",
+        "rational_rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "integer_layer_counts": {
+        "0,0,128": 40,
+        "0,64,64": 2240,
+        "0,128,0": 4320,
+        "32,64,32": 64514,
+        "32,96,0": 122880,
+        "64,0,64": 489,
+        "64,32,32": 552,
+        "64,64,0": 36830,
+        "96,0,32": 76,
+        "128,0,0": 212
+      },
+      "retained_leech_points": 164242,
+      "deleted_leech_points": 32318,
+      "added_integer_points": 67911,
+      "deletion_type_counts": {
+        "64,64,0": 32290,
+        "128,0,0": 28
+      },
+      "all_compatible_leech_vectors_retained": true,
+      "unforced_deletion_count": 0,
+      "midpoint_points": 65142,
+      "midpoint_distinct_bodies": 32599
+    },
+    "d29_alt": {
+      "dimension": 29,
+      "cardinality": 232153,
+      "integer_points": 232153,
+      "rational_points": 0,
+      "coordinates": "data/d29_alt_coordinates.npz",
+      "certificate": "data/d29_alt_certificate.npz",
+      "source_filename": "29/best_232153.npz",
+      "source_sha256": "dbe5f94bbbe4fb983107de1b04f6ea00c728c6b0b30dce55986ad7c1f08049bd",
+      "source_coordinate_multiplier": 1,
+      "canonical_hashes": {
+        "integer_rows_sha256": "e12f342e97042cfa960f510dbf98fcfcac974fa9607fce314f033f486370d341",
+        "rational_rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "integer_layer_counts": {
+        "0,0,128": 40,
+        "0,64,64": 2240,
+        "0,128,0": 4320,
+        "32,64,32": 64514,
+        "32,96,0": 122880,
+        "64,0,64": 489,
+        "64,32,32": 552,
+        "64,64,0": 36830,
+        "96,0,32": 76,
+        "128,0,0": 212
+      },
+      "retained_leech_points": 164242,
+      "deleted_leech_points": 32318,
+      "added_integer_points": 67911,
+      "deletion_type_counts": {
+        "64,64,0": 32290,
+        "128,0,0": 28
+      },
+      "all_compatible_leech_vectors_retained": true,
+      "unforced_deletion_count": 0,
+      "midpoint_points": 65142,
+      "midpoint_distinct_bodies": 32601
+    }
+  },
+  "comparison": "provenance/comparison.json",
+  "primary_records": [
+    "d26",
+    "d27",
+    "d28",
+    "d29"
+  ],
+  "alternative_records": [
+    "d29_alt"
+  ],
+  "octad": [
+    0,
+    2,
+    4,
+    5,
+    6,
+    10,
+    11,
+    23
+  ]
+}

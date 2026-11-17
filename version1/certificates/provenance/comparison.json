@@ -1,0 +1,16 @@
+{
+  "accessed": "2026-11-16",
+  "repository": "https://github.com/alexlegeartis/KissingNumbers",
+  "commit": "a38c522d5a52e0e58f3988a10378dfaa35827bb1",
+  "source_files": [
+    "KissingNumbers_RESULTS_d26_29.md"
+  ],
+  "bounds": {
+    "26": 201188,
+    "27": 209884,
+    "28": 222120,
+    "29": 231814
+  },
+  "full_source_snapshot_sha256": "368102efc99da768fc434ac646da4e6fe246a10dd5ee9e680046826bacfe4681",
+  "source_url": "https://github.com/alexlegeartis/KissingNumbers/blob/a38c522d5a52e0e58f3988a10378dfaa35827bb1/RESULTS.md"
+}

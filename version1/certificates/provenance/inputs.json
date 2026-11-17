@@ -1,0 +1,46 @@
+{
+  "publication_inputs": [
+    {
+      "filename": "paper.tex",
+      "bytes": 23986,
+      "sha256": "ead4fda238e4f47cfe51ed9eb657dfc605a8b9bd7125eec0bb67aa8eda608aee"
+    },
+    {
+      "filename": "paper.pdf",
+      "bytes": 441890,
+      "sha256": "fdeb6a6491e4ee65afb446214d68fb3b6df3df2fe44e64b46b5b80d1272b9706"
+    },
+    {
+      "filename": "references(1).bib",
+      "bytes": 9678,
+      "sha256": "7a09ca9fe86f1b874582899137f05bd2f2dc9404c3ce9cf34f868c7f9cd311eb"
+    }
+  ],
+  "coordinate_sources": {
+    "d26": {
+      "source_filename": "26/coordinates26_201192_exact.npz",
+      "source_sha256": "7d9707c126e286dcbcc317829ac3545671b146a2042474e1427fec1386b85586",
+      "source_coordinate_multiplier": 2
+    },
+    "d27": {
+      "source_filename": "27/coordinates27_210108.npz",
+      "source_sha256": "bd47aa0870d85ce9061fb62497a01a7ad96c0ec8a0d8eb915662610bc0ced865",
+      "source_coordinate_multiplier": 1
+    },
+    "d28": {
+      "source_filename": "28/coordinates28_223496.npz",
+      "source_sha256": "5e8ba717ab57227928684622e01e6a1cfe41be96de6dbc01f2a90be52736a487",
+      "source_coordinate_multiplier": 1
+    },
+    "d29": {
+      "source_filename": "29/coordinates29_232153.npz",
+      "source_sha256": "6dbb5e8d1d3ae339dd4090c129e1d84ff0641433b50bd3d14b28e5ea8079bbe2",
+      "source_coordinate_multiplier": 1
+    },
+    "d29_alt": {
+      "source_filename": "29/best_232153.npz",
+      "source_sha256": "dbe5f94bbbe4fb983107de1b04f6ea00c728c6b0b30dce55986ad7c1f08049bd",
+      "source_coordinate_multiplier": 1
+    }
+  }
+}

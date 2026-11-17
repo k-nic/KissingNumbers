@@ -1,0 +1,36 @@
+{
+  "record": "d28",
+  "integer_layers": {
+    "0,0,128": 24,
+    "0,64,64": 768,
+    "0,128,0": 4320,
+    "32,64,32": 50688,
+    "32,96,0": 122880,
+    "64,0,64": 384,
+    "64,32,32": 384,
+    "64,64,0": 43776,
+    "96,0,32": 64,
+    "128,0,0": 208
+  },
+  "deletion_types": {
+    "64,64,0": 25344,
+    "128,0,0": 32
+  },
+  "fibre_state_histogram": [
+    {
+      "deleted": 0,
+      "inserted": 0,
+      "fibres": 1152
+    },
+    {
+      "deleted": 8,
+      "inserted": 16,
+      "fibres": 3168
+    }
+  ],
+  "nonzero_tail_count": 52312,
+  "unique_integer_bodies": 25713,
+  "midpoint_count": 51136,
+  "unforced_deletion_indices": [],
+  "rational_conflicting_leech_count": 0
+}

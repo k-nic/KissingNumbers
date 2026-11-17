@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "record": "d26",
+  "dimension": 26,
+  "cardinality": 201192,
+  "exact": true,
+  "tolerance": null,
+  "integer_geometry": {
+    "integer_points": 201140,
+    "antipodal_pairs": 100374,
+    "unpaired_points": 392,
+    "unordered_pairs_covered": 20228549230,
+    "maximum_inner_product": 64,
+    "kernel": "binary64 exact integers",
+    "absolute_sum_bound": 1664
+  },
+  "rational_geometry": {
+    "rational_points": 52,
+    "rational_core_pairs": 10459280,
+    "rational_rational_pairs": 1326,
+    "maximum_affected_unit_product_numerator": 9386103802101,
+    "maximum_affected_unit_product_denominator": 18858632015284,
+    "maximum_affected_unit_product_approx": 0.49770862459663145
+  },
+  "total_unordered_pairs_covered": 20239009836,
+  "canonical_hashes": {
+    "integer_rows_sha256": "51f801a91a3482d5cca2dc1e952f7178c729ad4880e881c405b38671309edf88",
+    "rational_rows_sha256": "354732eb9d03908ce94469dadff3b81e8da253810f603f849ec2951f21e10bd7"
+  },
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "seconds": 16.469
+}

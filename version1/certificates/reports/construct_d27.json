@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "record": "d27",
+  "retained_leech_points": 183312,
+  "deleted_leech_points": 13248,
+  "added_integer_points": 26796,
+  "rational_points": 0,
+  "cardinality": 210108,
+  "all_compatible_leech_vectors_retained": true,
+  "canonical_hashes": {
+    "integer_rows_sha256": "ba50b047bd330934d1c5e2fa72a971c18700f9768a145213d98d59afa8e1adf6",
+    "rational_rows_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "seconds": 8.044
+}

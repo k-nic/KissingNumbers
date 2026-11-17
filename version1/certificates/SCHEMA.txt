@@ -1,0 +1,110 @@
+DATA SCHEMA
+===========
+Common convention: dimension d, squared norm 128, inner-product limit 64.
+The first 24 coordinates are the body; coordinates 24,...,d-1 are the tail.
+I=[0,2,4,5,6,10,11,23]; J is its complement in range(24).
+All indices are zero-based. All NPZ loads use allow_pickle=False.
+
+data/dN_certificate.npz (the compact defining witness)
+-----------------------------------------------------
+added_integer : integer array (a,d)
+    All added integer points, with nonzero tail. Rows are stored in numerical
+    lexicographic order. This array omits the retained Leech bulk.
+fraction_numerators : int64 array (r,d)
+fraction_denominators : int64 array (r,)
+    Rational added points n_i/q_i, with q_i>0 and nonzero tail. Empty for d27--29 and d29_alt.
+    d26 has r=52. An input row need not be primitive; the hash decoder reduces
+    the greatest common divisor of its numerators together with q_i.
+deleted_leech_indices : integer array (b,)
+    Sorted distinct indices into common.leech_shell(), whose 196560 rows are
+    sorted numerically and lexicographically, not by their raw byte strings.
+    Exactly the shell rows v with v.a_body>64 for at least one added point.
+    Rational comparisons use v.n_body>64*q. construct.py recomputes equality.
+midpoint_rows : integer array (m,)
+    Sorted indices into added_integer of exactly the points with tail norm 32.
+midpoint_endpoints : integer array (m,2)
+    Two Leech-shell indices (p_i,q_i) for each midpoint_rows[i]. Both endpoints
+    belong to the deletion list, their inner product is 64, and their sum is
+    twice the midpoint body. The full lifted point's tail is read from
+    added_integer[midpoint_rows[i],24:]. Its squared tail norm is 32.
+
+The reconstructed finite set is:
+    { (v,0) : v in the generated shell and its index is not deleted }
+    union rows(added_integer)
+    union { fraction_numerators[i]/fraction_denominators[i] }.
+Every pair of distinct points must have inner product <=64.
+
+data/dN_coordinates.npz (full arrays for inspection and verification)
+--------------------------------------------------------------------
+Integer-only records:
+    points : int16 array (N,d)
+    squared_norm : integer scalar 128
+    inner_product_limit : integer scalar 64
+    coordinate_denominator : integer scalar 2 (inherited lattice-scale label)
+The actual points tested are the rows as stored, and their unit normalization
+is points/sqrt(128), NOT points/2.
+
+Mixed record d26:
+    integer_points : int16 array (201140,26)
+    fraction_numerators : int64 array (52,26)
+    fraction_denominators : int64 array (52,)
+    squared_norm : integer scalar 128
+    inner_product_limit : integer scalar 64
+    format : string integer_core_and_row_rational_v1
+All fields use the same norm-128 convention. To return to the attached source's
+norm-32 convention, divide both the integer rows and the rational points by 2.
+
+manifest.json
+-------------
+records maps d26,d27,d28,d29 and d29_alt to the file paths, dimension, cardinality,
+integer/rational counts, retained/deleted shell counts, added counts, layer
+and deletion-type counts, original-input filename/hash, and scaling multiplier.
+
+canonical_hashes.integer_rows_sha256:
+    SHA-256 of integer rows sorted numerically lexicographically, encoded as
+    little-endian signed 16-bit values, row-major, without a header.
+canonical_hashes.rational_rows_sha256:
+    Reduce gcd(n_1,...,n_d,q)>0, append q to the numerator tuple, sort these
+    (d+1)-tuples numerically lexicographically, and encode little-endian signed
+    64-bit values, row-major, without a header. Empty rows give SHA-256 of b''.
+The integer and rational hashes describe separate parts of the same witness.
+They are independent of row order and NPZ compression metadata.
+
+integer_layer_counts keys "i,j,t" are the squared projection norms on I,J,T.
+deletion_type_counts use the same key convention, with t=0.
+source_coordinate_multiplier is 2 for the attached dimension-26 input and
+1 otherwise. Original input hashes refer to the supplied raw NPZ bytes, not
+the repackaged coordinate files. SHA256SUMS.txt covers distributed file bytes.
+
+data/dN_structure.json
+---------------------
+Human-readable summaries. The fibre histogram records, for every distinct
+J-part w of a shell fibre, (number of deleted vertices of F_w, number of
+inserted fibre-midpoint points with that J-part). Deletions include those
+required by other layers, such as rows; they are not independently charged
+to each layer. check_structure.py recomputes the histograms and layer counts.
+
+data/cube28.json
+---------------
+Two four-row bases in the ordered I coordinates, and two four-coordinate
+tails. Each basis row and tail has squared norm 32. All eight basis rows are
+orthogonal. For omit=0 or 1, choose all three remaining basis signs and both
+signs of tails[omit]. These are the two 16-point insertion families per cube.
+All four basis signs give the 16 deleted vertices of that cube. The structure
+checker verifies membership, orthogonality, external inequalities, and the
+223464-point precursor obtained by restoring the 32 deleted vertices.
+
+reports/
+--------
+verify_dN.json records full pair coverage, norms/distinctness success,
+antipodal pair/single counts, exact kernel bounds, canonical hashes, and runtime.
+For d26 it also gives the exact fraction for the largest unit product involving
+at least one rational point. If there are no rational points, the unused
+maximum fields are the sentinel -1 and are not geometric measurements.
+construct_dN.json records fresh conflict-set reconstruction and hash agreement.
+structure.json checks the geometric descriptions, selected-edge graphs, and
+special constructions. A selected-edge graph is built from distinct endpoint
+pairs, ignoring their tails; edge multiplicity counts their lifted points.
+negative_controls.json records rejection of explicitly invalid configurations.
+summary.json records completion of the whole workflow. Reports do not replace
+the scripts or certify any coordinates beyond the hashes they identify.

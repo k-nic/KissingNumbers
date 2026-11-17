@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "date": "2026-11-17",
+  "primary_records": [
+    {
+      "dimension": 26,
+      "previous_bound": 201188,
+      "cardinality": 201192,
+      "gain": 4
+    },
+    {
+      "dimension": 27,
+      "previous_bound": 209884,
+      "cardinality": 210108,
+      "gain": 224
+    },
+    {
+      "dimension": 28,
+      "previous_bound": 222120,
+      "cardinality": 223496,
+      "gain": 1376
+    },
+    {
+      "dimension": 29,
+      "previous_bound": 231814,
+      "cardinality": 232153,
+      "gain": 339
+    }
+  ],
+  "paper_layer_rows": {
+    "Retained Leech shell": [
+      192112,
+      183312,
+      171184,
+      164242
+    ],
+    "Fibre midpoints": [
+      8192,
+      25088,
+      50688,
+      64514
+    ],
+    "Row midpoints": [
+      0,
+      128,
+      384,
+      552
+    ],
+    "$E_8$ midpoints": [
+      128,
+      256,
+      64,
+      76
+    ],
+    "BW midpoints": [
+      512,
+      1024,
+      0,
+      0
+    ],
+    "$E_8$ auxiliary": [
+      64,
+      96,
+      384,
+      489
+    ],
+    "BW auxiliary": [
+      128,
+      192,
+      768,
+      2240
+    ],
+    "Poles": [
+      4,
+      12,
+      24,
+      40
+    ],
+    "Rational patch": [
+      52,
+      0,
+      0,
+      0
+    ],
+    "Total": [
+      201192,
+      210108,
+      223496,
+      232153
+    ]
+  },
+  "fibre_layer_endpoint_costs": {
+    "d26": {
+      "occupied_fibres": 1024,
+      "deleted_endpoints_per_fibre": 4,
+      "inserted_midpoints_per_fibre": 8
+    },
+    "d27": {
+      "occupied_fibres": 3136,
+      "deleted_endpoints_per_fibre": 4,
+      "inserted_midpoints_per_fibre": 8
+    },
+    "d28": {
+      "occupied_fibres": 3168,
+      "deleted_endpoints_per_fibre": 8,
+      "inserted_midpoints_per_fibre": 16
+    }
+  },
+  "geometric_witness_bytes_unchanged": true,
+  "all_citations_resolve": true,
+  "certificate_scope": [
+    26,
+    27,
+    28,
+    29
+  ],
+  "alternative_record": "d29_alt"
+}
